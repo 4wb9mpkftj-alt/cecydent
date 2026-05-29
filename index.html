@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CecyDent | Sonrisas Naturales</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
     <style>
@@ -113,7 +114,7 @@
 
         /* Estilos de Diseño */
         .blue-gradient {
-            background: linear-gradient(135deg,  #B0FFD2, #023e8a);
+            background: linear-gradient(135deg,  #BDEFF2, #D1FCFF);
         }
 
         
@@ -248,7 +249,7 @@
                 <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight brand-font">
                     Brilla tu sonrisa con el poder de la<span class="text-orange-300 italic"> Zanahoria.</span>
                 </h1>
-                <p class="text-lg text-blue-100 mb-10 max-w-md">
+                <p class="text-lg text-gray-400 mb-10 max-w-md">
                     Descubre el poder de la zanahoria para una higiene dental sin químicos agresivos.
                 </p>
                 <div class="flex flex-wrap gap-4">
@@ -296,7 +297,7 @@
             <button onclick="filterProducts('all')" class="category-pill active px-8 py-3 rounded-2xl border-2 border-gray-100 font-bold transition-all hover:border-blue-200">Todos</button>
             <button onclick="filterProducts('pasta')" class="category-pill px-8 py-3 rounded-2xl border-2 border-gray-100 font-bold transition-all hover:border-blue-200">Pastas Dentales</button>
             <button onclick="filterProducts('kits')" class="category-pill px-8 py-3 rounded-2xl border-2 border-gray-100 font-bold transition-all hover:border-blue-200">Paquetes Ahorro</button>
-            <button onclick="filterProducts('accesorios')" class="category-pill px-8 py-3 rounded-2xl border-2 border-gray-100 font-bold transition-all hover:border-blue-200">Accesorios</button>
+            <button onclick="filterProducts('accesorios')" class="category-pill px-8 py-3 rounded-2xl border-2 border-gray-100 font-bold transition-all hover:border-blue-200">Contactanos</button>
         </div>
 
         <!-- Grid de Productos -->
@@ -339,13 +340,27 @@
     <!-- Footer -->
     <footer class="py-12 bg-gray-50 border-t border-gray-100 text-center">
         <div class="max-w-6xl mx-auto px-6">
-            <div class="flex justify-center gap-6 mb-8 text-2xl">
-                <a href="https://www.tiktok.com/@cecy_dentt?_r=1&_t=ZS-96N0SIdq4ED" class="hover:text-blue-600 transition-colors">【ꚠ】𝗧𝗶𝗸𝗼𝗸</a>
-                <a href="https://www.instagram.com/cecy_dent?igsh=MWxsZHVnOGpoaXd3cw==" class="hover:text-pink-600 transition-colors">🅾  𝐈𝐧𝐬𝐭𝐚𝐠𝐫𝐚𝐦 ★</a>
-                <a href="#" class="hover:text-black transition-colors">📱</a>
-            </div>
-            <p class="text-gray-400 font-medium">&copy; 2024 CecyDent - Salud Dental Orgánica desde Tizayuca.</p>
-        </div>
+            <div class="flex justify-center gap-8 mb-8 text-4xl">
+
+    <a href="https://www.tiktok.com/@cecy_dentt?_r=1&_t=ZS-96N0SIdq4ED"
+       target="_blank"
+       class="hover:scale-125 hover:text-black transition-all duration-300">
+        <i class="fa-brands fa-tiktok"></i>
+    </a>
+
+    <a href="https://www.instagram.com/cecy_dent?igsh=MWxsZHVnOGpoaXd3cw=="
+       target="_blank"
+       class="hover:scale-125 hover:text-pink-500 transition-all duration-300">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+
+    <a href="https://wa.me/525630956015"
+       target="_blank"
+       class="hover:scale-125 hover:text-green-500 transition-all duration-300">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+</div>
     </footer>
 
     <!-- Carrito Lateral -->
@@ -429,7 +444,7 @@
                 grid.innerHTML += `
                     <div class="product-card bg-white rounded-[2.5rem] p-8 border border-blue-50 shadow-sm animate__animated animate__fadeInUp">
                         <div class="aspect-square bg-blue-50 rounded-[2rem] mb-6 flex items-center justify-center relative overflow-hidden group p-2">
-                            <img src="${p.img}" alt="${p.name}"class="w-full h-full object-contain z-10 p-6"">
+                            <img src="${p.img}" alt="${p.name}"class="w-full h-full object-contain z-10 p-6">
                             <div class="absolute inset-0 bg-blue-50/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
                         </div>
                         <h3 class="text-xl font-bold mb-2 text-blue-900">${p.name}</h3>
